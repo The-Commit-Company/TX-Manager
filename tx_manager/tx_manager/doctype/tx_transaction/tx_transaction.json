@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:TX-{#####}",
+ "creation": "2023-06-18 18:36:38.961513",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "account",
+  "description",
+  "amount",
+  "type",
+  "category",
+  "column_break_cvuv",
+  "is_flagged",
+  "remarks",
+  "debit_amount",
+  "credit_amount",
+  "file",
+  "merchant_category",
+  "transaction_id",
+  "might_be_duplicate",
+  "override_duplicate_analysis"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Account",
+   "options": "TX Account",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "Credit\nDebit"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Category",
+   "options": "TX Transaction Category",
+   "search_index": 1
+  },
+  {
+   "description": "This can contain CR/DR etc as in bank and credit statements",
+   "fieldname": "amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Amount",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_cvuv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "debit_amount",
+   "fieldtype": "Float",
+   "label": "Debit Amount",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "credit_amount",
+   "fieldtype": "Float",
+   "label": "Credit Amount",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "label": "Invoice File"
+  },
+  {
+   "fieldname": "merchant_category",
+   "fieldtype": "Data",
+   "label": "Merchant Category"
+  },
+  {
+   "fieldname": "transaction_id",
+   "fieldtype": "Data",
+   "label": "Transaction ID"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_flagged",
+   "fieldtype": "Check",
+   "label": "Is Flagged",
+   "search_index": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "might_be_duplicate",
+   "fieldtype": "Check",
+   "label": "Might be Duplicate?",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "override_duplicate_analysis",
+   "fieldtype": "Check",
+   "label": "Override Duplicate Analysis",
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-19 17:28:37.440987",
+ "modified_by": "Administrator",
+ "module": "Tx Manager",
+ "name": "TX Transaction",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "description, category, merchant_category",
+ "sort_field": "date",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "description",
+ "track_changes": 1
+}
