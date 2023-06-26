@@ -24,11 +24,12 @@ class TXTransactionImporter(Document):
 
 		date_column_index = parsed_data["columns"].index("date")
 		for row in parsed_data["data"]:
-			date_formats.append(frappe.utils.guess_date_format(row[date_column_index]))
+			if row[date_column_index]:
+				date_formats.append(frappe.utils.guess_date_format(row[date_column_index]))
 		
 		unique_date_formats = set(date_formats)
 		max_occurred_date_format = max(unique_date_formats, key=date_formats.count)
-
+		print(unique_date_formats)
 		if len(unique_date_formats) > 1:
 			# fmt: off
 			frappe.throw(_("The column has different date formats."))
@@ -40,11 +41,13 @@ class TXTransactionImporter(Document):
 				if column == "DO NOT IMPORT":
 					continue
 				if column == "date":
-					json_mapped_data[column] = datetime.strptime(row[index], max_occurred_date_format)
+					if row[index]:
+						json_mapped_data[column] = datetime.strptime(row[index], max_occurred_date_format)
 				
 				else:
 					json_mapped_data[column] = row[index]
-			
+			if not json_mapped_data["date"]:
+				continue
 			transaction = frappe.get_doc({
 				"doctype": "TX Transaction",
 				"account": self.account,
