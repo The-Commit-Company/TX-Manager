@@ -139,7 +139,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-19 17:28:37.440987",
+ "modified": "2023-06-27 23:30:37.639466",
  "modified_by": "Administrator",
  "module": "Tx Manager",
  "name": "TX Transaction",
@@ -151,10 +151,11 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "if_owner": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "TX User",
    "share": 1,
    "write": 1
   }

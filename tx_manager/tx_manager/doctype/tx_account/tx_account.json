@@ -43,9 +43,8 @@
    "options": "TX Import Template"
   }
  ],
- "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-19 15:37:44.916923",
+ "modified": "2023-06-27 23:31:44.986057",
  "modified_by": "Administrator",
  "module": "Tx Manager",
  "name": "TX Account",
@@ -57,10 +56,11 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "if_owner": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "TX User",
    "share": 1,
    "write": 1
   }
