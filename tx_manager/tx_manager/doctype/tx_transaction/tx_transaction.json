@@ -23,7 +23,8 @@
   "merchant_category",
   "transaction_id",
   "might_be_duplicate",
-  "override_duplicate_analysis"
+  "override_duplicate_analysis",
+  "balance"
  ],
  "fields": [
   {
@@ -135,11 +136,17 @@
    "fieldtype": "Check",
    "label": "Override Duplicate Analysis",
    "search_index": 1
+  },
+  {
+   "description": "Only for bank accounts",
+   "fieldname": "balance",
+   "fieldtype": "Data",
+   "label": "Balance"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-27 23:30:37.639466",
+ "modified": "2023-07-02 20:07:01.912428",
  "modified_by": "Administrator",
  "module": "Tx Manager",
  "name": "TX Transaction",

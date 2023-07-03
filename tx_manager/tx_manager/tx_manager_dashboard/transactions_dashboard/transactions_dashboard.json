@@ -1,0 +1,31 @@
+{
+ "cards": [
+  {
+   "card": "Total Transactions"
+  },
+  {
+   "card": "Total accounts"
+  },
+  {
+   "card": "Unclassified Transactions"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Spends over time",
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-07-02 15:54:21.514344",
+ "dashboard_name": "Transactions Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-07-02 16:04:26.942350",
+ "modified_by": "Administrator",
+ "module": "Tx Manager",
+ "name": "Transactions Dashboard",
+ "owner": "Administrator"
+}

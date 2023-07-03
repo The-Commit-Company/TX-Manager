@@ -14,14 +14,14 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Field Name",
-   "options": "date\ntransaction_id\ndescription\namount\ncredit_amount\ndebit_amount\nmerchant_category\nDO NOT IMPORT",
+   "options": "date\ntransaction_id\ndescription\namount\ncredit_amount\ndebit_amount\nmerchant_category\nDO NOT IMPORT\nbalance",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-06-19 18:15:16.285347",
+ "modified": "2023-07-02 20:07:21.367800",
  "modified_by": "Administrator",
  "module": "Tx Manager",
  "name": "TX Import Template Column",

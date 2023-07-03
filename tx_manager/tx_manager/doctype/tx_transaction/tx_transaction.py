@@ -44,3 +44,11 @@ class TXTransaction(Document):
 					if self.override_duplicate_analysis:
 						frappe.db.set_value("TX Transaction", duplicate.name, "override_duplicate_analysis", 1)
 	pass
+
+
+@frappe.whitelist()
+def get_unclassified_transactions():
+	"""
+		Returns all transactions that are not classified
+	"""
+	return frappe.db.count("TX Transaction", filters={"category": None})
