@@ -24,13 +24,15 @@
   "transaction_id",
   "might_be_duplicate",
   "override_duplicate_analysis",
-  "balance"
+  "balance",
+  "linked_account"
  ],
  "fields": [
   {
    "fieldname": "date",
    "fieldtype": "Date",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Date",
    "reqd": 1,
    "search_index": 1
@@ -142,11 +144,18 @@
    "fieldname": "balance",
    "fieldtype": "Data",
    "label": "Balance"
+  },
+  {
+   "fieldname": "linked_account",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Payment To/From",
+   "options": "TX Account"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-02 20:07:01.912428",
+ "modified": "2023-07-05 14:20:31.975372",
  "modified_by": "Administrator",
  "module": "Tx Manager",
  "name": "TX Transaction",

@@ -17,12 +17,18 @@ class TXTransaction(Document):
 				self.debit_amount = amount.replace("dr", "").replace(" ", "").strip()
 				self.credit_amount = 0
 		
-		if self.credit_amount:
+		if self.credit_amount and type(self.credit_amount) == str:
 			self.credit_amount = self.credit_amount.strip().replace(" ", "").lower()
 			self.type = "Credit"
 		
-		if self.debit_amount:
+		if self.debit_amount and type(self.debit_amount) == str:
 			self.debit_amount = self.debit_amount.strip().replace(" ", "").lower()
+			self.type = "Debit"
+		
+		if self.credit_amount and type(self.credit_amount) == int:
+			self.type = "Credit"
+		
+		if self.debit_amount and type(self.debit_amount) == int:
 			self.type = "Debit"
 	
 	def validate(self):
@@ -31,6 +37,10 @@ class TXTransaction(Document):
 		
 		if self.credit_amount and self.debit_amount:
 			frappe.throw("Please enter either credit or debit amount")
+		
+		if self.linked_account:
+			if self.linked_account == self.account:
+				frappe.throw("Linked account cannot be the same as the account")
 	
 	def before_save(self):
 		# If there are duplicates in the same account, date, description and amount, mark them as potential duplicates

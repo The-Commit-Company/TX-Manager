@@ -29,7 +29,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-27 23:32:03.916545",
+ "modified": "2023-07-05 14:08:18.453579",
  "modified_by": "Administrator",
  "module": "Tx Manager",
  "name": "TX Transaction Category",
@@ -50,6 +50,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
