@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"msad6wXiq9\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">TX Manager</span>\",\"col\":12}},{\"id\":\"V4uNi8tB6g\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard\",\"col\":3}},{\"id\":\"sjWk-nZBvB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Transactions\",\"col\":3}},{\"id\":\"_TWkjLAk44\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Import Transactions\",\"col\":3}},{\"id\":\"EPAvfZS5Zd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Categories\",\"col\":3}},{\"id\":\"0lCHcS28y7\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"xlLkIqUEwL\",\"type\":\"card\",\"data\":{\"card_name\":\"Accounts\",\"col\":4}}]",
+ "content": "[{\"id\":\"msad6wXiq9\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">TX Manager</span>\",\"col\":12}},{\"id\":\"V4uNi8tB6g\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard\",\"col\":3}},{\"id\":\"sjWk-nZBvB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Transactions\",\"col\":3}},{\"id\":\"GEnHaxQqet\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Transaction Summary Report\",\"col\":4}},{\"id\":\"_TWkjLAk44\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Import Transactions\",\"col\":3}},{\"id\":\"EPAvfZS5Zd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Categories\",\"col\":3}},{\"id\":\"0lCHcS28y7\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"xlLkIqUEwL\",\"type\":\"card\",\"data\":{\"card_name\":\"Accounts\",\"col\":4}}]",
  "creation": "2023-06-24 17:52:32.404641",
  "custom_blocks": [],
  "docstatus": 0,
@@ -41,7 +41,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-07-02 16:06:12.364972",
+ "modified": "2023-07-21 19:54:04.620953",
  "modified_by": "Administrator",
  "module": "Tx Manager",
  "name": "TX Manager",
@@ -53,6 +53,13 @@
  "roles": [],
  "sequence_id": 30.0,
  "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Transaction Summary Report",
+   "link_to": "TX Transaction Summary",
+   "type": "Report"
+  },
   {
    "color": "Grey",
    "doc_view": "List",
