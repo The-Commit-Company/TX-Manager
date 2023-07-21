@@ -8,7 +8,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2023-07-21 18:32:33.459444",
+ "modified": "2023-07-21 20:05:02.758181",
  "modified_by": "Administrator",
  "module": "Tx Manager",
  "name": "TX Transaction Summary",
@@ -20,6 +20,9 @@
  "roles": [
   {
    "role": "TX User"
+  },
+  {
+   "role": "System Manager"
   }
  ]
 }
